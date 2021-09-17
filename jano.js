@@ -47,7 +47,7 @@ jano.on("ready", async () => {
   console.log(`${jano.guilds.cache.size} Servers .`);
   console.log(`${jano.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} Users .`);
  jano.user.setStatus("invisible")
-  jano.user.setActivity("help | welcome vc bye jano", {
+  jano.user.setActivity("help | welcome vc", {
     type: "PLAYING"
   });
 });
