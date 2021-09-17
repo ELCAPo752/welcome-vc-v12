@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.listen(() => console.log("jano"));
+app.listen(() => console.log("tony"));
 
 app.use('/ping', (req, res) => {
   res.send(new Date());
@@ -14,7 +14,7 @@ const { get }  = require('node-superfetch');
 const ytdl = require("ytdl-core");
 
 
-jano.on("message", message => {
+tony.on("message", message => {
 if (message.content === "help") {
 const embed = new Discord.MessageEmbed()
 .setColor("RED")
@@ -26,11 +26,11 @@ const embed = new Discord.MessageEmbed()
 لینک  ئەهێنی هەتا بەخێرهاتنی نەفەر بکات 
 
 Tb/ ئەبێ لینکەکە لە یوتیوب بێت ئەگەر نا نابێت
-[\`my youtube\`](https://youtube.com/channel/UCJhji5FByFiEMTzlskppJWg) • [\`Support\`](https://discord.gg/9n6dj99ZEN)
+[\`my youtube\`](https://www.youtube.com/channel/UCDBlNBKYEqPkJ1HH1Hz44SA) • [\`Support\`](https://discord.gg/ttx9b2YcaP)
  `)
     
-    .setFooter(` welcome vc ✨ | Coded by , JANO`, jano.user.avatarURL)
-    .setURL("https://discord.gg/9n6dj99ZEN")
+    .setFooter(` welcome vc ✨ | Coded by , Tony Bot`, jano.user.avatarURL)
+    .setURL("https://discord.gg/ttx9b2YcaP")
       
     message.channel.send(embed);
   }
@@ -42,20 +42,20 @@ Tb/ ئەبێ لینکەکە لە یوتیوب بێت ئەگەر نا نابێت
 
 
 
-jano.on("ready", async () => {
-  console.log(`${jano.user.username} Ready .`);
-  console.log(`${jano.guilds.cache.size} Servers .`);
-  console.log(`${jano.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} Users .`);
- jano.user.setStatus("invisible")
-  jano.user.setActivity("help | welcome vc", {
+tony.on("ready", async () => {
+  console.log(`${tony.user.username} Ready .`);
+  console.log(`${tony.guilds.cache.size} Servers .`);
+  console.log(`${tony.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} Users .`);
+tony.user.setStatus("invisible")
+  tony.user.setActivity("help | welcome vc", {
     type: "PLAYING"
   });
 });
 
 
-jano.on("voiceStateUpdate", async(voiceOld, voiceNew) => {
+tony.on("voiceStateUpdate", async(voiceOld, voiceNew) => {
   const c = "887544153511194664"
-const cc = jano.channels.cache.get(c)
+const cc = tony.channels.cache.get(c)
   if (
     voiceNew.channelID == cc
   ) {
@@ -82,4 +82,4 @@ const connection = await cc.join();
 
 
 
-jano.login("ODY3MjA4Mzg2NjEzMzQ2MzE0.YPdwvw.CPTImvJXTSG1GdEfEtnJDhq5D58");
+tony.login("");
