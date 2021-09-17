@@ -26,7 +26,7 @@ const embed = new Discord.MessageEmbed()
 لینک  ئەهێنی هەتا بەخێرهاتنی نەفەر بکات 
 
 Tb/ ئەبێ لینکەکە لە یوتیوب بێت ئەگەر نا نابێت
-
+[\`my youtube\`](https://youtube.com/channel/UCJhji5FByFiEMTzlskppJWg) • [\`Support\`](https://discord.gg/9n6dj99ZEN)
  `)
     
     .setFooter(` welcome vc ✨ | Coded by , JANO`, jano.user.avatarURL)
