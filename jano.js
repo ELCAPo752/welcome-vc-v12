@@ -61,7 +61,7 @@ const cc = jano.channels.cache.get(c)
   ) {
 
 const connection = await cc.join();
-    connection.play(ytdl("https://youtube.com/shorts/GbrCu25apgE?feature=share", {
+    connection.play(ytdl("https://youtu.be/yRXDQE-aBII", {
         audioonly: true
       })
 );
