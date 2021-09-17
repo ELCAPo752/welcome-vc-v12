@@ -17,7 +17,7 @@ const ytdl = require("ytdl-core");
 jano.on("message", message => {
 if (message.content === "help") {
 const embed = new Discord.MessageEmbed()
-.setColor("RANDOM")
+.setColor("RED")
 .setDescription(` 
 زانیاری دەربارەی بۆتەکە
 
