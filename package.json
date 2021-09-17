@@ -1,9 +1,9 @@
 {
   "name": "welcome vc",
   "version": "0.0.1",
-  "main": "jano.js",
+  "main": "tony.js",
   "scripts": {
-    "start": "node jano.js"
+    "start": "node tony.js"
   },
   "dependencies": {
     "@discordjs/opus": "^0.4.0",
@@ -31,5 +31,5 @@
     "express"
   ],
   "devDependencies": {},
-  "author": "jano"
+  "author": "tony"
 }
